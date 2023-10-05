@@ -1,0 +1,124 @@
+{UTF-8}
+Abandono de autopistas  = A FUNCTION OF( N de autopistas) ~~|
+Abandono de autopistas= INTEG (
+	,
+		2)
+	~	
+	~		|
+
+Construccion de autopistas  = A FUNCTION OF( N de autopistas)
+	~	
+	~		|
+
+Ingresos de autopista  = A FUNCTION OF( Abandono de autopistas,Construccion de autopistas\
+		)
+	~	
+	~		|
+
+N de autopistas= INTEG (
+	Peaje-Ingresos de autopista,
+		5)
+	~	
+	~		|
+
+Peaje=A FUNCTION OF(Peaje,Volumen de trafico) ~~|
+Peaje=
+	10
+	~	
+	~		|
+
+Volumen de trafico=A FUNCTION OF(Volumen de trafico) ~~|
+Volumen de trafico= INTEG (
+	100000,
+		)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+10,1,N de autopistas,576,162,49,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,2,48,217,163,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,2,100,0,0,22,0,192,0,-1--1--1,,1|(299,163)|
+1,4,5,1,4,0,0,22,0,192,0,-1--1--1,,1|(455,163)|
+11,5,0,377,163,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,Peaje,377,194,43,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,Volumen de trafico,251,274,49,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,8,7,5,1,0,0,0,0,192,0,-1--1--1,,1|(344,226)|
+12,9,48,887,162,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,10,12,1,100,0,0,22,0,192,0,-1--1--1,,1|(685,162)|
+1,11,12,9,4,0,0,22,0,192,0,-1--1--1,,1|(817,162)|
+11,12,0,751,162,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,13,Ingresos de autopista,751,193,62,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,14,Abandono de autopistas,645,266,53,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,15,1,14,1,0,0,0,0,192,0,-1--1--1,,1|(585,216)|
+1,16,14,12,1,0,0,0,0,192,0,-1--1--1,,1|(667,200)|
+10,17,Construccion de autopistas,672,80,62,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,18,1,17,1,0,0,0,0,192,0,-1--1--1,,1|(596,115)|
+1,19,17,12,1,0,0,0,0,192,0,-1--1--1,,1|(713,137)|
+///---\\\
+:L<%^E!@
+5:Construccion de autopistas
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:0
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

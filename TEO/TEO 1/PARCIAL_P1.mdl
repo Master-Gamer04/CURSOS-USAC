@@ -1,0 +1,149 @@
+{UTF-8}
+********************************************************
+	.modelo banco 1 y 2 - prestamo
+********************************************************~
+		<?xml version="1.0" encoding="UTF-8"?>
+		<richtext version="1.0.0.0" xmlns="http://www.wxwidgets.org">
+		  <paragraphlayout textcolor="#000000" fontpointsize="9" fontfamily="70" \
+		fontstyle="90" fontweight="400" fontunderlined="0" fontface="Segoe UI" \
+		alignment="1" parspacingafter="10" parspacingbefore="0" linespacing="10" \
+		margin-left="5,4098" margin-right="5,4098" margin-top="5,4098" \
+		margin-bottom="5,4098">
+		    <paragraph>
+		      <text></text>
+		    </paragraph>
+		  </paragraphlayout>
+		</richtext>
+		
+	|
+
+RETIROS 0=
+	DINERO 0*Tasa de interés 0-700
+	~	Dolares
+	~		|
+
+DINERO 0= INTEG (
+	RETIROS 0,
+		5000)
+	~	Dolares
+	~		|
+
+Tasa de interés 0=
+	0.1
+	~	Dolares
+	~		|
+
+RETIROS=
+	DINERO*Tasa de interés-500
+	~	Dolares
+	~		|
+
+DINERO= INTEG (
+	RETIROS,
+		5000)
+	~	Dolares
+	~		|
+
+Tasa de interés=
+	0.08
+	~	Dolares
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 30
+	~	Year
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Year
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Year [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Year [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,DINERO,536,220,62,23,3,131,0,0,0,0,0,0,0,0,0,-1,-1,0
+12,2,48,354,215,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,1,4,0,0,22,0,0,0,-1--1--1,,1|(449,215)|
+1,4,5,2,100,0,0,22,0,0,0,-1--1--1,,1|(388,215)|
+11,5,0,419,215,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,RETIROS,419,234,56,19,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,Tasa de interés,331,319,60,23,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,8,7,5,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
+1,9,1,5,1,0,0,0,0,64,0,-1--1--1,,1|(497,138)|
+10,10,DINERO 0,548,489,62,23,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+12,11,48,366,484,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,12,14,10,4,0,0,22,0,0,0,-1--1--1,,1|(461,484)|
+1,13,14,11,100,0,0,22,0,0,0,-1--1--1,,1|(400,484)|
+11,14,0,431,484,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,15,RETIROS 0,431,503,40,11,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,16,Tasa de interés 0,343,588,60,23,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,17,16,14,0,0,0,0,0,64,0,-1--1--1,,1|(0,0)|
+1,18,10,14,1,0,0,0,0,64,0,-1--1--1,,1|(509,407)|
+12,19,0,757,149,80,40,8,7,0,0,-1,0,0,0,0,0,0,0,0,0
+B) EL SALDO EN LA CUENTA DESPUES DE 15 AÑOS ES DE Q2284.59|<<NnN>>|
+12,20,0,714,284,80,40,8,7,0,0,-1,0,0,0,0,0,0,0,0,0
+C) EL DINERO LE DURARA POCO MAS DE 20 AÑOS
+12,21,0,768,436,80,40,8,7,0,0,-1,0,0,0,0,0,0,0,0,0
+D) SI  EL INTERES AUMENTA A 10% Y EL RETIRO ANUAL A Q700, LE DURARA POCO MAS DE 13 AÑOS
+12,22,0,246,411,80,40,8,7,0,0,-1,0,0,0,0,0,0,0,0,0
+Andre Joaquin Ortega De Paz - 201900597|<<NnN>>|
+///---\\\
+:L<%^E!@
+1:Current.vdfx
+4:Time
+5:DINERO 0
+9:Current
+19:100,0
+24:0
+25:30
+26:30
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

@@ -1,0 +1,114 @@
+{UTF-8}
+Pago de interéses Banco 1=
+	"Saldo de crédito - Banco 1"*Tasa de interés Banco 1
+	~	Dolares
+	~		|
+
+Pago de interéses Banco 2=
+	"Saldo de crédito - Banco 2"*Tasa de interés Banco 2
+	~	Dolares
+	~		|
+
+"Saldo de crédito - Banco 1"= INTEG (
+	Pago de interéses Banco 1,
+		-2000)
+	~	Dolares
+	~		|
+
+"Saldo de crédito - Banco 2"= INTEG (
+	Pago de interéses Banco 2,
+		-1000)
+	~	Dolares
+	~		|
+
+Tasa de interés Banco 1=
+	0.02
+	~	Dolares
+	~		|
+
+Tasa de interés Banco 2=
+	0.04
+	~	Dolares
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 24
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|96,96,100,0
+10,1,"Saldo de crédito - Banco 1",536,220,62,23,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+12,2,48,354,215,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,4,6,1,4,0,0,22,0,0,0,-1--1--1,,1|(449,215)|
+1,5,6,2,100,0,0,22,0,0,0,-1--1--1,,1|(388,215)|
+11,6,0,419,215,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,7,Pago de interéses Banco 1,419,234,56,19,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,Tasa de interés Banco 1,331,319,48,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,9,8,6,0,0,0,0,0,64,0,-1--1--1,,1|(376,264)|
+1,10,1,6,1,0,0,0,0,64,0,-1--1--1,,1|(497,138)|
+10,11,"Saldo de crédito - Banco 2",1004,215,60,28,3,131,0,0,0,0,0,0,0,0,0,0,0,0
+12,12,48,786,212,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,14,16,11,4,0,0,22,0,0,0,-1--1--1,,1|(910,212)|
+1,15,16,12,100,0,0,22,0,0,0,-1--1--1,,1|(830,212)|
+11,16,0,870,212,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,17,Pago de interéses Banco 2,870,239,56,19,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,19,Tasa de interés Banco 2,793,318,48,19,8,3,0,0,0,0,0,0,0,0,0,0,0,0
+1,20,19,16,0,0,0,0,0,64,0,-1--1--1,,1|(831,263)|
+1,21,11,16,1,0,0,0,0,64,0,-1--1--1,,1|(938,125)|
+///---\\\
+:L<%^E!@
+1:Current.vdfx
+9:Current
+23:0
+15:0,0,0,0,0,0
+19:100,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+4:Time
+5:"Saldo de crédito - Banco 2"
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:2
+41:0
+76:0
+77:0
+78:0
+79:0
+80:0
+81:0
+24:0
+25:24
+26:24
+75:
+43:

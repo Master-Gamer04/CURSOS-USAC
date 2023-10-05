@@ -1,0 +1,103 @@
+{UTF-8}
+AIRE ACONDICIONADO=
+	HOTEL
+	~	GRADOS
+	~		|
+
+HOTEL=A FUNCTION OF(HOTEL,TEMPERATURA) ~~|
+HOTEL= INTEG (
+	TEMPERATURA,
+		)
+	~	
+	~		|
+
+TEMPERATURA=
+	(TEMPERATURA AMBIENTE+AIRE ACONDICIONADO)/2
+	~	
+	~		|
+
+TEMPERATURA AMBIENTE=
+	32
+	~	GRADOS
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Hour
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Hour
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Hour [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Hour [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+10,1,HOTEL,431,257,43,23,3,3,0,0,-1,0,0,0,0,0,0,0,0,0
+12,2,48,129,253,10,8,0,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,3,5,2,100,0,0,22,0,192,0,-1--1--1,,1|(198,253)|
+1,4,5,1,4,0,0,22,0,192,0,-1--1--1,,1|(328,253)|
+11,5,0,263,253,6,8,34,3,0,0,1,0,0,0,0,0,0,0,0,0
+10,6,TEMPERATURA,263,284,53,23,40,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,AIRE ACONDICIONADO,353,365,62,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,TEMPERATURA AMBIENTE,126,336,53,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,8,5,1,0,0,0,0,192,0,-1--1--1,,1|(194,337)|
+1,10,1,7,1,0,0,0,0,192,0,-1--1--1,,1|(449,332)|
+1,11,7,5,1,0,0,0,0,192,0,-1--1--1,,1|(294,323)|
+///---\\\
+:L<%^E!@
+5:AIRE ACONDICIONADO
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:1
+72:0
+73:0
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:5
+41:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1

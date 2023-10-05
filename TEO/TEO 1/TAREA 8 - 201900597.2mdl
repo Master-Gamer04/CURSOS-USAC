@@ -1,0 +1,99 @@
+{UTF-8}
+Demanda de mas servicios urbanos  = A FUNCTION OF( Poblacion)
+	~	
+	~		|
+
+Disminucion de empleos  = A FUNCTION OF( Poblacion)
+	~	
+	~		|
+
+Disponibilidad de empleos  = A FUNCTION OF( Demanda de mas servicios urbanos,Disminucion de empleos\
+		)
+	~	
+	~		|
+
+Emigrantes que llegan  = A FUNCTION OF( )
+	~	
+	~		|
+
+Migracion hacia la ciudad  = A FUNCTION OF( Disponibilidad de empleos)
+	~	
+	~		|
+
+Poblacion  = A FUNCTION OF( Migracion hacia la ciudad)
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP 
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$-1--1--1,0,|12||-1--1--1|-1--1--1|-1--1--1|-1--1--1|-1--1--1|96,96,100,0
+10,1,Disponibilidad de empleos,418,473,67,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Migracion hacia la ciudad,660,325,44,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,Poblacion,899,448,44,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,Disminucion de empleos,720,690,53,23,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,Demanda de mas servicios urbanos,664,551,62,25,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,6,1,2,1,0,0,0,0,192,0,-1--1--1,,1|(468,379)|
+1,7,2,3,1,0,0,0,0,192,0,-1--1--1,,1|(819,341)|
+1,8,3,4,1,0,0,0,0,192,0,-1--1--1,,1|(865,642)|
+1,9,3,5,1,0,0,0,0,192,0,-1--1--1,,1|(830,509)|
+1,10,5,1,1,0,0,0,0,192,0,-1--1--1,,1|(539,537)|
+1,11,4,1,1,0,0,0,0,192,0,-1--1--1,,1|(548,637)|
+///---\\\
+:L<%^E!@
+5:Disponibilidad de empleos
+19:100,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:1
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
+105:0,0,0,0,0,0,0,0,0,0
+104:Courier|12||0-0-0|0-0-0|-1--1--1|0-0-255|192-192-192|-1--1--1
